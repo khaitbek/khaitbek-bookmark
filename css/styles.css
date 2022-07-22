@@ -289,10 +289,7 @@ h4 {
 
 .features {
 
-    background-image: url("../images/gr-box.png");
-    background-position: calc(50% - 650px) 100%;
-    background-repeat: no-repeat;
-    background-size: 1065px 400px;
+  
 }
 
 .features__inner {
@@ -348,11 +345,32 @@ h4 {
 }
 
 .features__content {
+    display: none;
     flex-shrink: 0;
+    z-index: 1;
     width: 100%;
     height: 100%;
     padding-bottom: 150px;
     z-index: 1;
+    
+    background-position: calc(50% - 650px) 100%;
+    background-repeat: no-repeat;
+    background-size: 1065px 400px;
+}
+
+.features__content--active__content{
+    display: block;
+}
+
+.features__content:nth-child(1){
+    background-image: url("../images/gr-box.png");
+}
+
+.features__content:nth-child(2){
+    background-image: url("../images/gr-second-box.png");
+}
+.features__content:nth-child(3){
+    background-image: url("../images/gr-third-box.png");
 }
 
 .features__content__inner {

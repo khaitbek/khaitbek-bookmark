@@ -58,7 +58,7 @@
 
         <!-- features section start -->
         <section class="features">
-            <div class="container">
+            
                 <div class="features__wrapper">
                     <div class="features__inner">
                         <h2 class="features__title text-dark">Features</h2>
@@ -66,13 +66,13 @@
                     </div>
     
                     <ul class="features__list d-flex">
-                        <li class="features__item features__item--active__item text-dark">Simple Bookmarking</li>
-                        <li class="features__item text-dark">Speedy Searching</li>
-                        <li class="features__item text-dark">Easy Sharing</li>
+                        <li class="features__item features__item--active__item text-dark" data-link="#panel1">Simple Bookmarking</li>
+                        <li class="features__item text-dark" data-link="#panel2">Speedy Searching</li>
+                        <li class="features__item text-dark" data-link="#panel3">Easy Sharing</li>
                     </ul>
     
                     <div class="features__container d-flex">
-                        <div class="features__content features__content--active__content">
+                        <div class="features__content features__content--active__content" id="panel1">
                             <div class="features__content__inner">
                                 <h3 class="features__content__title">Bookmark in one click</h3>
                                 <p class="features__content__text">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
@@ -80,7 +80,7 @@
                             </div>
                         </div>
     
-                        <div class="features__content">
+                        <div class="features__content" id="panel2">
                             <div class="features__content__inner">
                                 <h3 class="features__content__title">Intelligent search</h3>
                                 <p class="features__content__text">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
@@ -88,7 +88,7 @@
                             </div>
                         </div>
     
-                        <div class="features__content">
+                        <div class="features__content" id="panel3">
                             <div class="features__content__inner">
                                 <h3 class="features__content__title">Share your bookmarks</h3>
                                 <p class="features__content__text">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
@@ -98,7 +98,7 @@
                     </div>
     
                 </div>
-            </div>
+            
         </section>
         <!-- features section end -->
 
@@ -235,6 +235,7 @@
     </footer>
     <!-- footer end -->
 
+    <script src="./script/app.js"></script>
 </body>
 
 </html>
